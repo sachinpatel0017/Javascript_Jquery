@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <h1>JQuery Selector</h1>
+         <button id="btn1">click me 1</button>
+         <button id="btn2">click me 2</button>
+        <p>First paragraph outside the division</p>
+        <div id="firstdiv" class="mydivs">
+            <p>This is a first paragraph in first division</p>
+             <p>This is a second paragraph in first division</p>
+        </div>
+        <div id="seconddiv" class="mydivs">
+            <p>This is a third paragraph in second division</p>
+        </div>
+        <div id="thirddiv" class="mydivs">
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+                <div >
+            <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ol>
+        </div>
+       
+
+    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+           // $("button").click(fn1);
+        
+           $("#btn1").mouseenter(fn1);
+            $("#btn1").mouseleave(fn2);
+            $("#btn2").hover(fn1,fn2);
+             function fn1()
+            {
+              $("#firstdiv").fadeOut(1000);
+            }
+             function fn2()
+            {
+              $("#firstdiv").fadeIn(1000);
+            }
+        });
+           
+    </script>
+
+</html>
+
