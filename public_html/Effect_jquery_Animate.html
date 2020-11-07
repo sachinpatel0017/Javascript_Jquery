@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery Animation</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <h1>JQuery Animation</h1>
+         <button id="btn1">click me 1</button>
+         <button id="btn2">click me 2</button>
+          <button id="btn3">Animate</button>
+        <p>First paragraph outside the division</p>
+        <div id="firstdiv" class="mydivs">
+            <p>This is a first paragraph in first division</p>
+             <p>This is a second paragraph in first division</p>
+        </div>
+        <div id="seconddiv" class="mydivs">
+            <p>This is a third paragraph in second division</p>
+        </div>
+        <div id="thirddiv" class="mydivs">
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+                <div >
+            <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ol>
+        </div>
+        <div>
+            <p id="cube" class="mycube">CUBE</p>
+        </div>
+
+    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        /* 
+         * Include in css style
+    .mycube{
+    width:50px;
+    height: 50px;
+    background-color: blueviolet;
+    opacity: 0.4;
+    position: absolute;
+    padding: 20px;
+}*/
+        $(document).ready(function(){
+          $("#btn3").click(function(){
+              $("#cube").animate({
+                  left:'150px',
+                  opacity:'1',
+                  width:'100px',
+                  height:'100px'},3000)
+          });
+        });
+           
+    </script>
+
+</html>
+
