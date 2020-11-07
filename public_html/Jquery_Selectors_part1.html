@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <h2 class="myheading" id="firstH2">jQuery selector 1</h2>
+        <h2 class="myheading">jQuery selector 2</h2>
+        <h2 id="firstH2">jQuery selector 3</h2>
+        <h2>jQuery selector 4</h2>
+        <div class="myheading">
+            <p> Para 1 </p>
+        </div>
+        <button onclick="fn1()" id="btn1">click me</button>
+
+    </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+            function fn1()
+            {
+                //$("h2").fadeToggle();
+                // $("#firstH2").fadeToggle();
+                $(".myheading").fadeToggle();
+            }
+    </script>
+
+</html>
