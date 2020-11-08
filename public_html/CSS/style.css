@@ -27,3 +27,11 @@ div p{
     position: absolute;
     padding: 20px;
 }
+.newdivclass{
+    border-radius: 10px;
+    background-color: aqua;
+}
+.newparaclass{
+   font-weight: bold;
+   color: blueviolet;
+}
