@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Jquery Dom Manipulation</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <h1>DOM Manipulation</h1>
+       
+          <button id="btn1">ADDclass</button>
+         <button id="btn2">RemoveClass</button>
+          <button id="btn3">ToggleClass</button>
+         <button id="btn4">CSS</button>
+         
+         <div id="firstdiv" class="mydivs">
+            <p id="p1">This is a first <b>paragraph</b> in <i>first</i> division</p>
+        </div>
+     </body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+   
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+             $("#firstdiv").addClass("newdivclass newparaclass"); 
+          });
+        $("#btn2").click(function(){
+             $("#firstdiv").removeClass("newdivclass"); 
+          });
+           $("#btn3").click(function(){
+             $("#firstdiv").toggleClass("newdivclass"); 
+          });
+           $("#btn4").click(function(){
+            alert($("#firstdiv").css("padding"));
+          });
+        });
+           
+    </script>
+
+</html>
+
